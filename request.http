@@ -1,0 +1,29 @@
+GET http://localhost:5000/students
+
+###
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+    "dept": "EN",
+    "name": "Tany",
+    "roll": 18
+}
+###
+PUT http://localhost:5000/students
+Content-Type:application/json
+
+{
+    "dept": "CS",
+    "name": "Kishan",
+    "roll":12
+    
+}
+
+###
+DELETE http://localhost:5000/students
+Content-Type:application/json
+
+{
+    "roll":16
+}

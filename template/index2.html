@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: garamond;
+      font-size: 300%;
+      border-style: double;
+      border-color: red;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      font-family: garamond;
+      color: rgb(0, 204, 255);
+      border-style: groove;
+      border-color: red;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 150%;
+    }
+
+    p {
+      font-family: garamond;
+      font-size: 150%;
+    }
+
+    div {
+      background-color: black;
+      width: 500px;
+      border: 5px solid red;
+      padding: 20px;
+      margin: 20px;
+      right: 0px;
+    }
+
+    /*body {background-image: src("");}*/
+    div {
+      text-align: center;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    input[type=submit],
+    input[type=file] {
+      background-color: green;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Attendance</title>
+
+  <link rel="stylesheet" href='/static/main.css' />
+</head>
+
+<body
+  style="background-image: url('data:image/jpeg;base64,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');">
+  <h1 style="color:blue;">Attendance Portal</h1>
+  <h3>
+    <marquee>This is an attendance portal where we can upload picture of a class and take attendance easily.
+
+
+    </marquee>
+
+
+
+    <form method="POST" enctype="multipart/form-data" action="/">
+      <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+     
+
+      <input type="submit" value="Submit">
+      
+    </form>
+    <br>
+    <p style="color:yellow;">File uploaded successfully</p>
+    <form action="/show_image" target="_blank">
+      <input type="submit" value="Display Image" />
+    </form>
+</body>
+
+</html>
